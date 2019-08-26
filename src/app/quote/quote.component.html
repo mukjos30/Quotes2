@@ -1,24 +1,36 @@
-<p>quote works!</p>
 
-
-<h1 class="quotesheader">My Quotes</h1>
-
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+<div class="container-fluid">
+<h1 class="text-center"> <strong>My Quotes App </strong></h1>
+<p> <em><strong>This App helps people to write his or her quotes where others can be able<br>to like and dislike his or her quotes delete them and they can be able <br>to know Author and  time  when it was written</strong></em></p>
 <hr>
-
-<div style="margin-left: 15%;" class="content">
+<div style="margin-left: 30%;" class="content">
   <div class="row">
+      <div class="col-md-6">
+          <div class="jumbotron">
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-  </div>
+   
 
   <div *ngFor='let quote of Quotes;let i = index'>
       <h3 style="font-family: 'Jura', sans-serif;" id="{{i}}"><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</h3>
-      
-      <!-- Toggle Button -->
-      <div style="width: 130px;">  <a href="#" class="btn btn-sm animated-button thar-one" (click)='toogleDetails(i)'>TOOGLE</a> </div>
+      <p appHighlight *ngIf="highestUpvote()===quote.likes&& quote.likes>0">
+     
+    </p> 
+    
+     <p> {{quote.author}}</p>
+
+      <div style="width: 130px;">  <a href="#" class="btn btn-dark animated-button thar-one" (click)='toogleDetails(i)'>Quote Details</a> </div>
       
       <div class="row" *ngIf="quote.showDescription">
         <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
       </div>
   </div>
 </div>
+</div>
+</div>
 <p *ngIf='Quotes.length> 5'>This is the End of Quotes</p>
+</div>
+<div class="jumbotron">
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+
+

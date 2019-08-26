@@ -1,0 +1,16 @@
+h1{
+text-align: center;
+color: brown
+}
+h3{
+    font-family: 'Merriweather', serif;   
+}
+.content{
+    width: 1500px;
+    margin-left:-100px;
+    
+}
+p{
+    font-size:20px;
+    margin-left: 400px;
+}

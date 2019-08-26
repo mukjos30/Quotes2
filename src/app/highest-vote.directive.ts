@@ -1,4 +1,5 @@
 import { Directive, ElementRef } from '@angular/core';
+import { isNgContainer } from '@angular/compiler';
 
 @Directive({
   selector: '[appHighestVote]'
@@ -11,3 +12,4 @@ export class HighestVoteDirective {
 
 }
  
+

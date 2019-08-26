@@ -1,0 +1,86 @@
+/* $green: #1ECD97;
+$gray: #bbbbbb; */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left: -65px;
+  margin-top: -20px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+button {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #fff;
+  border: 2px solid green;
+  color:green;
+  letter-spacing:1px;
+  text-shadow:0;
+}
+  
+
+.onclic {
+  width: 40px;
+  border-color:gray;
+  border-width:3px;
+  font-size:0;
+  border-left-color:green;
+  animation: rotating 2s 0.25s linear infinite;
+}
+.form-group{
+  margin-left: -50px;
+}
+.Author{
+  width: 400px;
+  margin-left: -100px;
+} 
+/* .name{
+height: 100px;; */
+
+ .row{
+   width: 100px;
+ }
+ .quote{
+   margin-left:100px;
+   width:500px;
+   
+ }
+ .back{
+   margin-left: -50px;
+   margin-top: -50px;
+ } 
+ 
+ .for{
+   margin-left:40px;
+   width: 400px;
+ }
+ .name{
+   margin-left: -250px;
+ }
+ .form{
+   margin-left:20px;
+   margin-top: -30px;
+   width:600px;
+ }
+ .Author{
+   margin-left: -250px;
+   width: 580px;
+
+ }
+ .Dis{
+   margin-left: -200px;
+ }
+ .play{
+   margin-left:30px;
+ }
+ /* .styles{
+   margin
+ } */
